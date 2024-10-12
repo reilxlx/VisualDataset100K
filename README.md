@@ -62,9 +62,9 @@ server {
 
 **2.1 数据集生成脚本:**
 
-* **`ImagesToQuestion_vllm_VG100K.py`**:  为每张图像生成问题，并将结果保存到JSON文件。
-* **`ImagesToQuestionAns_vllm_VG100K.py`**:  基于生成的问题，生成对应答案。
-* **`ImagesToDetails_vllm_VG100K.py`**:  生成图像的详细描述信息。
+* **`ImagesToQuestion_vllm_VD100K.py`**:  为每张图像生成问题，并将结果保存到JSON文件。
+* **`ImagesToQuestionAns_vllm_VD100K.py`**:  基于生成的问题，生成对应答案。
+* **`ImagesToDetails_vllm_VD100K.py`**:  生成图像的详细描述信息。
 
 
 **2.2 VisualDataset100K数据集内容:**
