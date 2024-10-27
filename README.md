@@ -65,7 +65,8 @@ server {
 * **`ImagesToQuestion_vllm_VD100K.py`**:  为每张图像生成问题，并将结果保存到JSON文件。
 * **`ImagesToQuestionAns_vllm_VD100K.py`**:  基于生成的问题，生成对应答案。
 * **`ImagesToDetails_vllm_VD100K.py`**:  生成图像的详细描述信息。
-
+* **`ImagesToChoiceQA_vllm_VD100K.py`**:  为每张图像生成问答对单项选择题。
+* **`JsonlChoiceQAClean.py`**:  整理ImagesToChoiceQA_vllm_VD100K.py生成的json。
 
 **2.2 VisualDataset100K数据集内容:**
 
@@ -74,6 +75,7 @@ server {
 * **图像详细描述数据集 (100K):**
     * `Qwen2VL2B_Details.jsonl`: 使用Qwen2VL-2B生成的图像描述。
     * `Qwen2VL7B_Details.jsonl`: 使用Qwen2VL-7B生成的图像描述。
+    * `Qwen2VL72BInt4_Details.jsonl`: 使用Qwen2VL-72B-Int4生成的图像描述。
 
 * **图像问答对数据集 (100K & 58K):**
     * `QuestionsAnswers_Qwen2VL2B.jsonl`:  Qwen2VL-7B提问，Qwen2VL-2B回答 (100K)。
@@ -83,6 +85,10 @@ server {
     * `QuestionsAnswers-Qwen2VL7B-sorted.jsonl`: Claude3.5Sonnet提问，Qwen2VL-7B回答 (58K)。
     * `QuestionsAnswers-Qwen2VL72B-sorted.jsonl`: Claude3.5Sonnet提问，Qwen2VL-72B回答 (58K)。
 
+* **基于图像内容的单项选择题 (100K):**
+    * `Qwen2VL7B_ChoiceQA.jsonl`:  基于Qwen2VL-7B对图像生成问题、四个选择项和答案 (100K)。
+    * `Qwen2VL72BInt4_ChoiceQA.jsonl`:  基于Qwen2VL-72B-Int4对图像生成问题、四个选择项和答案 (100K)。
+    
 * **DPO数据集 (58K):** 用于Direct Preference Optimization训练。
     * `Claude-Qwen2VL2B.json`
     * `Claude-Qwen2VL7B.json`
