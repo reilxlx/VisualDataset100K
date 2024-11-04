@@ -78,8 +78,10 @@ server {
     * `Qwen2VL72BInt4_Details.jsonl`: 使用Qwen2VL-72B-Int4生成的图像描述。
 
 * **图像问答对数据集 (100K & 58K):**
+    * `Questions_Qwen2VL7B.jsonl`:  Qwen2VL-7B根据图片内容产生的问题 (100K)。
     * `QuestionsAnswers_Qwen2VL2B.jsonl`:  Qwen2VL-7B提问，Qwen2VL-2B回答 (100K)。
     * `QuestionsAnswers_Qwen2VL7B.jsonl`:  Qwen2VL-7B提问，Qwen2VL-7B回答 (100K)。
+    * `QuestionsAnswers_Qwen2VL72BInt4.jsonl`：Qwen2VL-7B提问，Qwen2VL-72B-Int4回答 (100K)。
     * `QuestionsAnswers-Claude3_5sonnnet-sorted.jsonl`: Claude3.5Sonnet提问和回答 (58K)。
     * `QuestionsAnswers-Qwen2VL2B-sorted.jsonl`: Claude3.5Sonnet提问，Qwen2VL-2B回答 (58K)。
     * `QuestionsAnswers-Qwen2VL7B-sorted.jsonl`: Claude3.5Sonnet提问，Qwen2VL-7B回答 (58K)。
