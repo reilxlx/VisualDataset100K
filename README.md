@@ -5,7 +5,7 @@ Deploy large models locally using vllm and utilize them to construct the VisualD
 
 ### 1. Local Deployment of Large Models (vllm + nginx)
 
-The example uses multi GPUs, loads the Qwen2-VL-2B-Instruct model through vllm, and uses nginx for load balancing.
+Uses multi GPUs, loads the Qwen/Qwen2-VL-2B-Instruct、Qwen/Qwen2-VL-7B-Instruct、Qwen/Qwen2-VL-72B-Instruct-GPTQ-Int4 models through vllm, and uses nginx for load balancing.
 
 **1.1 Launch vllm instances:**
 
