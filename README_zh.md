@@ -109,3 +109,5 @@ server {
 ### 致谢
 
 本项目受益于 [Visual Genome Dataset V1.2数据集](http://visualgenome.org/api/v0/api_home.html)，感谢以上诸位作者的付出。
+
+### 如果该项目对你有帮助，烦请给一个Star⭐.
