@@ -4,7 +4,7 @@
 
 ### 1. 本地部署大模型(vllm + nginx)
 
-示例使用4块T4 GPU，通过vllm加载Qwen/Qwen2-VL-2B-Instruct、Qwen/Qwen2-VL-7B-Instruct、Qwen/Qwen2-VL-72B-Instruct-GPTQ-Int4模型，并使用nginx进行负载均衡。
+使用多块GPU，通过vllm加载Qwen/Qwen2-VL-2B-Instruct、Qwen/Qwen2-VL-7B-Instruct、Qwen/Qwen2-VL-72B-Instruct-GPTQ-Int4模型，并使用nginx进行负载均衡。
 
 **1.1 启动vllm实例:**
 
